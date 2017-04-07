@@ -1,0 +1,58 @@
+{
+  "name": "starter-kit",
+  "version": "0.1.0",
+  "description": "A basic set-up to dabble and test with React, Redux, Webpack, and Babel.",
+  "main": "bundle.js",
+  "author": "Liz Shigetoshi",
+  "repository": "https://github.com/lshig/starter-kit.git",
+  "license": "MIT",
+  "standard": {
+    "parser": "babel-eslint",
+    "plugins": [
+      "flowtype"
+    ],
+    "globals": [
+      "describe",
+      "context",
+      "before",
+      "beforeEach",
+      "after",
+      "afterEach",
+      "it",
+      "expect"
+    ]
+  },
+  "dependencies": {
+    "react": "*",
+    "react-dom": "*",
+    "react-redux": "*",
+    "redux": "*"
+  },
+  "devDependencies": {
+    "babel-core": "*",
+    "babel-eslint": "*",
+    "babel-loader": "*",
+    "babel-preset-env": "*",
+    "babel-preset-flow": "*",
+    "babel-preset-react": "*",
+    "enzyme": "*",
+    "eslint-plugin-flowtype": "*",
+    "html-webpack-plugin": "*",
+    "jest-cli": "*",
+    "react-addons-test-utils": "*",
+    "react-dom": "*",
+    "standard": "*",
+    "uglifyjs-webpack-plugin": "*",
+    "webpack": "*",
+    "webpack-dev-server": "*"
+  },
+  "scripts": {
+    "start": "npm install",
+    "pretest": "standard --fix",
+    "test": "jest --no-cache --verbose --coverage",
+    "test:watch": "npm test -- --watch",
+    "build:dev": "webpack",
+    "build:prod": "webpack -p --env production",
+    "server": "webpack-dev-server"
+  }
+}
