@@ -22,6 +22,9 @@ const config = {
   },
   plugins: [HTMLWebpackPluginConfig],
   devServer: {
+    watchOptions: {
+      poll: true
+    },
     compress: false,
     port: 9000
   }

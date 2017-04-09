@@ -23,6 +23,7 @@
     ]
   },
   "dependencies": {
+    "prop-types": "*",
     "react": "*",
     "react-dom": "*",
     "react-redux": "*",
@@ -39,8 +40,8 @@
     "eslint-plugin-flowtype": "*",
     "html-webpack-plugin": "*",
     "jest-cli": "*",
-    "react-addons-test-utils": "*",
     "react-dom": "*",
+    "react-test-renderer": "*",
     "standard": "*",
     "uglifyjs-webpack-plugin": "*",
     "webpack": "*",
@@ -53,6 +54,6 @@
     "test:watch": "npm test -- --watch",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
-    "server": "webpack-dev-server"
+    "server": "webpack-dev-server --open"
   }
 }

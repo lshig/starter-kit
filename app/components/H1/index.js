@@ -1,5 +1,6 @@
 'use strict'
 import React, {Component} from 'react'
+import PropTypes from 'prop-types'
 export default class H1 extends Component {
   static defaultProps: {
     text: string
@@ -14,5 +15,5 @@ H1.defaultProps = {
   text: ''
 }
 H1.propTypes = {
-  text: React.PropTypes.string.isRequired
+  text: PropTypes.string.isRequired
 }

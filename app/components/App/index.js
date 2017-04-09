@@ -1,6 +1,6 @@
 'use strict'
 import React, {Component} from 'react'
-import H1 from '../../components/H1/index'
+import H1 from '../H1/index'
 export default class App extends Component {
   render () {
     return (
