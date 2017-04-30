@@ -8,9 +8,6 @@
   "license": "MIT",
   "standard": {
     "parser": "babel-eslint",
-    "plugins": [
-      "flowtype"
-    ],
     "globals": [
       "describe",
       "context",
@@ -19,7 +16,9 @@
       "after",
       "afterEach",
       "it",
-      "expect"
+      "expect",
+      "array",
+      "func"
     ]
   },
   "dependencies": {
@@ -27,17 +26,17 @@
     "react": "*",
     "react-dom": "*",
     "react-redux": "*",
-    "redux": "*"
+    "redux": "*",
+    "redux-logger": "*",
+    "redux-thunk": "*"
   },
   "devDependencies": {
     "babel-core": "*",
     "babel-eslint": "*",
     "babel-loader": "*",
     "babel-preset-env": "*",
-    "babel-preset-flow": "*",
     "babel-preset-react": "*",
     "enzyme": "*",
-    "eslint-plugin-flowtype": "*",
     "html-webpack-plugin": "*",
     "jest-cli": "*",
     "react-dom": "*",
@@ -54,6 +53,6 @@
     "test:watch": "npm test -- --watch",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
-    "server": "webpack-dev-server --open"
+    "server": "webpack-dev-server"
   }
 }
