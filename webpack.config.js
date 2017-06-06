@@ -8,21 +8,24 @@ const HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
 })
 const VendorChunkPluginConfig = new webpack.optimize.CommonsChunkPlugin({
   name: 'vendor',
-  filename: 'vendor.js',
+  filename: 'dest/vendor.js',
   minChunks: function (module) {
     return module.context && module.context.indexOf('node_modules') !== -1
   }
 })
 const config = {
-  entry: path.join(__dirname, '/src/index.js'),
+  entry: path.join(__dirname, '/src/index.jsx'),
   output: {
-    filename: 'bundle.js',
+    filename: 'dest/bundle.js',
     path: __dirname
+  },
+  resolve: {
+    extensions: ['.js','.jsx']
   },
   module: {
     rules: [
       {
-        test: /\.js?$/,
+        test: /\.jsx?$/,
         include: [
           path.resolve(__dirname, 'src')
         ],
@@ -37,7 +40,6 @@ const config = {
     ]
   },
   performance: {
-    // hints: 'warning',
     maxAssetSize: 200000,
     maxEntrypointSize: 400000
   },
