@@ -8,7 +8,7 @@ const HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
 })
 const VendorChunkPluginConfig = new webpack.optimize.CommonsChunkPlugin({
   name: 'vendor',
-  filename: 'dest/vendor.js',
+  filename: 'dist/vendor.js',
   minChunks: function (module) {
     return module.context && module.context.indexOf('node_modules') !== -1
   }
@@ -16,7 +16,7 @@ const VendorChunkPluginConfig = new webpack.optimize.CommonsChunkPlugin({
 const config = {
   entry: path.join(__dirname, '/src/index.jsx'),
   output: {
-    filename: 'dest/bundle.js',
+    filename: 'dist/bundle.js',
     path: __dirname
   },
   resolve: {
