@@ -1,6 +1,6 @@
 # starter-kit
 
-A basic set-up to dabble with React, Redux, Webpack, and Babel.
+A basic set-up to dabble with React, Redux, Webpack, and Babel. For my eyes only :eyes:.
 
 ## Basics
 - Install [Node.js and npm](https://nodejs.org/en/)
@@ -21,8 +21,3 @@ A basic set-up to dabble with React, Redux, Webpack, and Babel.
 ## Build Resources
 - [webpack + webpack-dev-server](https://webpack.js.org/configuration/dev-server/#devserver)
 - [webpack + HTMLWebpackPlugin](https://webpack.js.org/plugins/html-webpack-plugin/)
-
-Thanks for stopping by to see one of the things I like to experiment on!
-
-Cheers,<br>
-Liz Shigetoshi
