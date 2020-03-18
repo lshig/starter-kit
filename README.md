@@ -1,6 +1,6 @@
 # starter-kit
 
-A basic set-up to dabble with React, Redux, Webpack, and Babel. For my eyes only :eyes:.
+For my eyes only :eyes:.
 
 ## Basics
 - Install [Node.js and npm](https://nodejs.org/en/)
