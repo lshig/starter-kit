@@ -42,10 +42,9 @@ module.exports = {
         options: {
           presets: ['@babel/react', '@babel/env']
         },
-        test: /\.(js|jsx)$/
+        test: /\.js$/
       }
-    ],
-    noParse: /(mapbox-gl)\.js$/
+    ]
   },
   optimization: {
     splitChunks: {
