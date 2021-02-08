@@ -6,28 +6,27 @@ const HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
   filename: path.join(__dirname, '/index.html'),
   inject: true,
   minify: {
-    removeComments: true,
     collapseWhitespace: true,
-    removeRedundantAttributes: true,
-    useShortDoctype: true,
-    removeEmptyAttributes: true,
-    removeStyleLinkTypeAttributes: true,
     keepClosingSlash: true,
-    minifyJS: true,
     minifyCSS: true,
-    minifyURLs: true
+    minifyJS: true,
+    minifyURLs: true,
+    removeComments: true,
+    removeEmptyAttributes: true,
+    removeRedundantAttributes: true,
+    removeStyleLinkTypeAttributes: true,
+    useShortDoctype: true
   },
   template: path.join(__dirname, '/src/index.html')
 });
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   entry: {
     main: './src/index.js'
   },
   output: {
-    chunkFilename: 'vendor.js',
-    filename: 'bundle.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
   resolve: {
@@ -49,7 +48,7 @@ module.exports = {
   optimization: {
     splitChunks: {
       cacheGroups: {
-        vendor: {
+        defaultVendors: {
           chunks: 'initial',
           name: 'vendor',
           test: 'vendor',
