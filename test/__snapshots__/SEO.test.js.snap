@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SEO basic renders 1`] = `
+<HelmetWrapper
+  defer={true}
+  encodeSpecialCharacters={true}
+  title="starter-kit"
+>
+  <meta
+    content="Liz Shigetoshi"
+    name="author"
+  />
+  <meta
+    content="Template for building a React app from scratch"
+    name="description"
+  />
+  <meta
+    content="template,react,babel,webpack"
+    name="keywords"
+  />
+  <meta
+    content="https://lizshigetoshi.com/starter-kit"
+    property="og:url"
+  />
+  <meta
+    content="starter-kit"
+    property="og:title"
+  />
+  <meta
+    content="Template for building a React app from scratch"
+    property="og:description"
+  />
+  <meta
+    content="summary_large_image"
+    name="twitter:card"
+  />
+  <meta
+    content="@LizShigetoshi"
+    name="twitter:creator"
+  />
+  <meta
+    content="starter-kit"
+    name="twitter:title"
+  />
+  <meta
+    content="Template for building a React app from scratch"
+    name="twitter:description"
+  />
+</HelmetWrapper>
+`;

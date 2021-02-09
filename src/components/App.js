@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Heading from './Heading';
+import SEO from './SEO';
 
 export default function App() {
   return (
-    <section>
+    <Fragment>
+      <SEO />
       <Heading text="Hello, World!" />
-    </section>
+    </Fragment>
   );
 }

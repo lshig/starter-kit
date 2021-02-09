@@ -1,9 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App basic renders 1`] = `
-<section>
+<Fragment>
+  <SEO />
   <Heading
     text="Hello, World!"
   />
-</section>
+</Fragment>
 `;

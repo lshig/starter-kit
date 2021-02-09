@@ -40,7 +40,7 @@ const FaviconsWebpackPluginConfig = new FaviconsWebpackPlugin({
 });
 
 module.exports = {
-  mode: 'production',
+  mode: process.env.NODE_ENV || 'development',
   entry: {
     main: './src/index.js'
   },
@@ -67,11 +67,10 @@ module.exports = {
   optimization: {
     splitChunks: {
       cacheGroups: {
-        defaultVendors: {
-          chunks: 'initial',
-          name: 'vendor',
-          test: 'vendor',
-          enforce: true
+        commons: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all'
         }
       }
     },
