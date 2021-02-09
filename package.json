@@ -1,18 +1,19 @@
 {
   "name": "starter-kit",
   "version": "0.3.0",
-  "description": "A basic set-up to dabble with React, Redux, Webpack, and Babel.",
+  "description": "Template for building a React app from scratch",
   "private": true,
   "author": "Liz Shigetoshi",
   "repository": "https://github.com/lshig/starter-kit.git",
   "license": "MIT",
   "scripts": {
     "build": "webpack",
+    "deploy": "gh-pages -d dist",
     "format": "prettier --write '**/*.js'",
     "lint": "eslint .",
     "start": "webpack serve",
-    "test:watch": "npm test -- --watch",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "test:watch": "npm test -- --watch"
   },
   "dependencies": {
     "prop-types": "^15.7.2",
@@ -42,6 +43,8 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-react": "^7.22.0",
+    "favicons": "^6.2.0",
+    "favicons-webpack-plugin": "^5.0.1",
     "html-webpack-plugin": "^5.0.0",
     "jest": "^26.6.3",
     "prettier": "^2.2.1",
