@@ -1,5 +1,7 @@
-/*
-* OPTION 1: Create a giant minified css file with SASS
-* OPTION 2: Create multiple css files and break them into component folders
-*/
-@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+body {
+  padding: 0 30px;
+  color: #fff;
+  background-color: #000;
+}

@@ -1,4 +1,4 @@
-const presets = ['@babel/env', '@babel/react'];
+const presets = ['@babel/preset-env', '@babel/preset-react'];
 const plugins = ['@babel/plugin-proposal-class-properties'];
 
 if (process.env.NODE_ENV === 'production') {
