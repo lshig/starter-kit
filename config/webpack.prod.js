@@ -24,7 +24,9 @@ module.exports = merge(base, {
             options: {
               importLoaders: 2,
               sourceMap: false,
-              modules: true
+              modules: {
+                localIdentName: '[sha1:hash:hex:4]'
+              }
             }
           },
           'postcss-loader',

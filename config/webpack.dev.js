@@ -22,7 +22,13 @@ module.exports = merge(base, {
           'style-loader',
           {
             loader: 'css-loader',
-            options: { sourceMap: true, importLoaders: 1, modules: true }
+            options: {
+              sourceMap: true,
+              importLoaders: 1,
+              modules: {
+                localIdentName: '[sha1:hash:hex:4]'
+              }
+            }
           },
           { loader: 'postcss-loader', options: { sourceMap: true } },
           { loader: 'sass-loader', options: { sourceMap: true } }
