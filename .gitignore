@@ -6,12 +6,8 @@
 *.js.map
 
 # Misc
-# ===========
 .DS_Store
 **/.DS_Store
-ehthumbs.db
-Icon?
-Thumbs.db
 .env
 
 # Logs
@@ -24,3 +20,6 @@ coverage
 
 # Dependency directories
 node_modules
+
+# Builds
+dist
