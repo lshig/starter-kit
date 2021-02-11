@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Heading basic renders 1`] = `
-<h1>
+<h1
+  className="heading1"
+>
   Foobar
 </h1>
 `;
