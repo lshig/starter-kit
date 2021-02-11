@@ -19,7 +19,7 @@ exports[`SEO basic renders 1`] = `
     name="keywords"
   />
   <meta
-    content="https://lizshigetoshi.com/starter-kit"
+    content="https://lizshigetoshi.com/starter-kit/"
     property="og:url"
   />
   <meta

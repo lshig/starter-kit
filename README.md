@@ -1,6 +1,6 @@
 # starter-kit
 
-Template for building a React app from scratch :new:
+Template for building a React app from scratch :new:. See [demo](https://lizshigetoshi.com/starter-kit/).
 
 ## Basics
 
@@ -22,16 +22,16 @@ Template for building a React app from scratch :new:
 - [Stylelint](https://stylelint.io/)
 - [PostCSS](https://postcss.org/)
 - [Markdownlint](https://github.com/DavidAnson/markdownlint)
-- Run `npm run format` to format and write JS files with Prettier
-- Run `npm run lint` to determine if there simple errors according to ESLint, Stylelint, and Markdownlint
+- Run `npm run format` to format and write `*.js`, `*.scss`, `*.css`, and `*.md` files with Prettier
+- Run `npm run lint` to determine if there are simple errors according to ESLint, Stylelint, and Markdownlint
 
 ## Tests
 
 - [PropTypes](https://www.npmjs.com/package/prop-types)
 - [Jest](https://facebook.github.io/jest/docs/api.html)
 - [Enzyme](http://airbnb.io/enzyme/docs/api/index.html)
-- Run `npm test` to run formatting, linting, and Jest tests and check coverage in terminal or through build `coverage/` folder
-- Run `npm run test:watch` to actively watch Jest in terminal while modifying tests
+- Run `npm test` to run formatting, linting, and Jest tests. Check coverage report in terminal or through the built `coverage/` folder
+- Run `npm run test:watch` to run testing and actively watch Jest in the terminal while modifying tests
 
 ## Build
 

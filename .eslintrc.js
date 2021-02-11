@@ -9,8 +9,8 @@ module.exports = {
     node: true
   },
   extends: [
-    './config/eslint-react.js',
-    './config/eslint-import.js',
+    './config/eslint.react.js',
+    './config/eslint.import.js',
     'prettier'
   ],
   parser: 'babel-eslint',

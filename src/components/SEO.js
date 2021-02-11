@@ -10,7 +10,7 @@ export default function SEO() {
     keywords: 'template,react,babel,webpack',
     title: 'starter-kit',
     twitterUsername: '@LizShigetoshi',
-    url: 'https://lizshigetoshi.com/starter-kit'
+    url: 'https://lizshigetoshi.com/starter-kit/'
   };
 
   return (
