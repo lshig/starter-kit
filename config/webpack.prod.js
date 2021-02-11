@@ -10,7 +10,7 @@ module.exports = merge(base, {
   devtool: false,
   output: {
     path: paths.build,
-    publicPath: '/',
+    publicPath: '/starter-kit/',
     filename: '[name].bundle.js'
   },
   module: {
