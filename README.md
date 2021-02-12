@@ -21,9 +21,9 @@ Template for building a React app from scratch :new:. See [demo](https://lizshig
 - [Dart Sass + SCSS](https://sass-lang.com/dart-sass)
 - [Stylelint](https://stylelint.io/)
 - [PostCSS](https://postcss.org/)
-- [Markdownlint](https://github.com/DavidAnson/markdownlint)
+- [Remark](https://github.com/remarkjs/remark-lint)
 - Run `npm run format` to format and write `*.js`, `*.scss`, `*.css`, and `*.md` files with Prettier
-- Run `npm run lint` to determine if there are simple errors according to ESLint, Stylelint, and Markdownlint
+- Run `npm run lint` to determine if there are simple errors according to ESLint, Stylelint, and Remark
 
 ## Tests
 
